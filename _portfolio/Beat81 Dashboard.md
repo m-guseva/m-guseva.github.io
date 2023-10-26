@@ -1,6 +1,6 @@
 ---
 title: "Beat81 Workout Dashboard"
-excerpt: "Short description of portfolio item number 2 <br/><img src='https://github.com/m-guseva/personal/assets/63409978/e75597a9-abbc-4de6-9ce9-c7a16a7e942c'>"
+excerpt: "Using Python's streamlit library to visualize workout results <br/><img src='https://github.com/m-guseva/personal/assets/63409978/e75597a9-abbc-4de6-9ce9-c7a16a7e942c'>"
 collection: portfolio
 ---
 
@@ -13,4 +13,5 @@ by showing the autocorrelations in the data.
 
 [Link to the github repository](https://github.com/m-guseva/B81-Dashboard)
 
+This is a sample dataset:
 [<img src="https://github.com/m-guseva/B81-Dashboard/assets/63409978/3068baeb-cf1e-4826-90aa-8fe4f3524bb2" width="800"/>](image.png)
