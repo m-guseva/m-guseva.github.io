@@ -1,3 +1,11 @@
+---
+layout: archive
+title: "pubs"
+permalink: /oubs/
+author_profile: true
+
+---
+
 # Publications
 
 ### [Instruction effects on randomness in sequence generation](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full)
