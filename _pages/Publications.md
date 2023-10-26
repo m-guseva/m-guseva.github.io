@@ -1,10 +1,11 @@
 ---
 layout: archive
 title: "Publications"
+permalink: "/pubs/"
 author_profile: true
 ---
 
-
+test
 Manuscript currently in preparation: "Neural correlates of behavioral randomization", a functional magnetic resonance imaging study exploring the neural basis of human randomization behavior.
 
 ---
