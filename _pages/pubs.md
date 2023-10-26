@@ -26,7 +26,7 @@ conditional entropy and estimated Markov order. The randomization scores were hi
 irregular or mentally simulate a random event (coin toss) thus yielding recommendations for future studies on randomization behavior.
 
 
-
+---
 ## [Surgical face masks do not impair the decoding of facial expressions of negative affect more severely in older than in younger adults](https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-022-00403-8)
 
 Henke, L., Guseva, M., Wagemans, K., Pischedda, D., Haynes, J. D., Jahn, G., & Anders, S. (2022) in Cognitive Research: Principles and Implications, 7(1), 1-15.
@@ -49,7 +49,7 @@ older people.
 
 
 
-
+---
 ## [Willingness-to-pay for Green Electricity: The Increasing Gap Between Fiction and Reality](https://link.springer.com/article/10.1007/s12398-016-0185-4)
 
 Andor, M., Frondel, M., Guseva, M. et al. in Zeitschrift für Energiewirtschaft 40, 199–209 (2016).
