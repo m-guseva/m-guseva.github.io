@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "pubs"
-permalink: /oubs/
+permalink: /pubs/
 author_profile: true
 
 ---
