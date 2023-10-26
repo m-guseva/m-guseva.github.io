@@ -1,12 +1,14 @@
 ---
 layout: archive
-title: "pubs"
+title: "Publications"
 permalink: /pubs/
 author_profile: true
-
 ---
 
-# Publications
+
+Manuscript currently in preparation: "Neural correlates of behavioral randomization", a functional magnetic resonance imaging study exploring the neural basis of human randomization behavior.
+
+---
 
 ### [Instruction effects on randomness in sequence generation](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full)
 Guseva, M., Bogler, C., Allefeld, C., & Haynes, J. D. (2023) in Frontiers in Psychology, 14, 1113654.
