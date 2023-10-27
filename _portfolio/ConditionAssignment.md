@@ -1,6 +1,6 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='/images/groupAllocation_mainIMG.png'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='_portfolio/images/groupAllocation_mainIMG.png'>"
 collection: portfolio
 ---
 
