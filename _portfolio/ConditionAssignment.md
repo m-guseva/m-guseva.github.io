@@ -3,6 +3,7 @@ title: "Algorithm that allocates participants into balanced groups"
 excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='/images/groupAllocation_mainIMG.png'>"
 collection: portfolio
 ---
+
 ## The issue:
 In my recent study I faced the challenge to allocate 90 participants into three different equal sized groups, in such a way that the sex ratio and average age remained the same across all groups (like in the figure below). 
 
@@ -12,7 +13,7 @@ It worked like a charm during the data collection phase earlier this year. The a
 Of course I didn't leave it to chance whether the algorithm works or not, so I wrote simulation script (which is also contained in the repository as `simulation.py`). It provides a way to simulate an experiment based on different population parameters (e.g. an experiment with more female than male participants or more older females than males) and check the resulting group assignment.
 
 
-<img title="groupAllocationDiagram" alt="groupAllocationDiagram" src="/images/groupAllocation.png" width="700">
+<img title="groupAllocationDiagram" alt="groupAllocationDiagram" src="/images/groupAllocation.png">
 
 
 ## The procedure in short:
