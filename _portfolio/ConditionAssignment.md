@@ -14,7 +14,9 @@ Of course I didn't leave it to chance whether the algorithm works or not, so I w
 
 
 
-![groupAllocation](/groupAllocation.png)
+![groupAllocation](https://github.com/m-guseva/personal/assets/63409978/380d2cc3-089c-4c6b-b6c6-b57cdeb0f6e8)
+
+
 
 
 ## The procedure in short:
