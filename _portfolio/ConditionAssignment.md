@@ -1,11 +1,8 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "Using Python's streamlit library to visualize workout results <br/><img src='groupAllocation_mainIMG.png'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='groupAllocation_mainIMG.png', width='500'>"
 collection: portfolio
 ---
-excerpt: "Using Python's streamlit library to visualize workout results <br/><img src='https://github.com/m-guseva/personal/assets/63409978/c67a942c-7c7f-4d99-bf9c-9de53f803d9c'>"
-
-
 
 ## The issue:
 In my recent study I faced the challenge to allocate 90 participants into three different equal sized groups, in such a way that the sex ratio and average age remained the same across all groups (like in the figure below). 
@@ -17,7 +14,7 @@ Of course I didn't leave it to chance whether the algorithm works or not, so I w
 
 
 
-![groupAllocation](https://github.com/m-guseva/personal/assets/63409978/5a14cc7c-d25c-4b91-a766-b8944123dab4)
+![groupAllocation](groupAllocation.png)
 
 
 ## The procedure in short:
