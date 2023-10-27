@@ -14,9 +14,10 @@ Of course I didn't leave it to chance whether the algorithm works or not, so I w
 
 
 ![groupAllocation](https://github.com/m-guseva/personal/assets/63409978/5a14cc7c-d25c-4b91-a766-b8944123dab4)
+![groupAllocation](https://github.com/m-guseva/personal/_portfolio/images/groupAllocation.png)
 
 
-<img title="groupAllocationDiagram" alt="groupAllocationDiagram" src="/_portfolio/images/groupAllocation.png">
+<img title="groupAllocationDiagram" alt="groupAllocationDiagram" src="personal/_portfolio/images/groupAllocation.png">
 
 
 ## The procedure in short:
