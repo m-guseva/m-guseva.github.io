@@ -1,10 +1,8 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "Using Python's streamlit library to visualize workout results <br/><img src='https://github.com/m-guseva/personal/assets/63409978/e75597a9-abbc-4de6-9ce9-c7a16a7e942c'>"
+excerpt: "Using Python's streamlit library to visualize workout results <br/><img src='https://github.com/m-guseva/personal/assets/63409978/c67a942c-7c7f-4d99-bf9c-9de53f803d9c'>"
 collection: portfolio
 ---
-
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://github.com/m-guseva/personal/assets/63409978/c67a942c-7c7f-4d99-bf9c-9de53f803d9c'>"
 
 
 
