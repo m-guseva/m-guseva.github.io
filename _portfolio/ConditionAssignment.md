@@ -1,6 +1,6 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='groupAllocation_mainIMG.png', width='500'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='groupAllocation_mainIMG.png'>"
 collection: portfolio
 ---
 
@@ -14,7 +14,7 @@ Of course I didn't leave it to chance whether the algorithm works or not, so I w
 
 
 
-![groupAllocation](groupAllocation.png)
+![groupAllocation](/groupAllocation.png)
 
 
 ## The procedure in short:
