@@ -1,6 +1,6 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='groupAllocation_mainIMG.png'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://github.com/m-guseva/personal/assets/63409978/f9866a32-28a5-418f-b51c-6371097436b7'>"
 collection: portfolio
 ---
 
@@ -11,6 +11,7 @@ This trivial if one already knows all the individuals who will participate in th
 
 It worked like a charm during the data collection phase earlier this year. The allocations in the diagram are actually the real allocations that resulted during my fMRI study (which is currently in preparation for submission).
 Of course I didn't leave it to chance whether the algorithm works or not, so I wrote simulation script (which is also contained in the repository as `simulation.py`). It provides a way to simulate an experiment based on different population parameters (e.g. an experiment with more female than male participants or more older females than males) and check the resulting group assignment.
+
 
 
 
