@@ -1,6 +1,6 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://m-guseva.github.io/personal/_portfolio/images/groupAllocation_mainIMG.png'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='_portfolio/images/groupAllocation_mainIMG.png'>"
 collection: portfolio
 ---
 
@@ -13,7 +13,7 @@ It worked like a charm during the data collection phase earlier this year. The a
 Of course I didn't leave it to chance whether the algorithm works or not, so I wrote simulation script (which is also contained in the repository as `simulation.py`). It provides a way to simulate an experiment based on different population parameters (e.g. an experiment with more female than male participants or more older females than males) and check the resulting group assignment.
 
 
-<img title="groupAllocationDiagram" alt="groupAllocationDiagram" src="_portfolio/images/groupAllocation.png">
+<img title="groupAllocationDiagram" alt="groupAllocationDiagram" src="https://github.com/m-guseva/personal/blob/acde72d5af9357e9832118952343b173261458df/_portfolio/images/groupAllocation.png">
 
 
 ## The procedure in short:
