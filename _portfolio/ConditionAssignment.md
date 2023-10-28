@@ -1,8 +1,9 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://github.com/m-guseva/personal/assets/63409978/1d1dc856-34d9-4e4e-8fdf-5b96d2356b1e'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://github.com/m-guseva/personal/assets/63409978/be961ff6-3bed-4b3c-9d00-2392be94384b'>"
 collection: portfolio
 ---
+
 
 
 ## The issue:
