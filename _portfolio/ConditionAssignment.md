@@ -1,23 +1,19 @@
 ---
 title: "Algorithm that allocates participants into balanced groups"
-excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://github.com/m-guseva/personal/assets/63409978/f9866a32-28a5-418f-b51c-6371097436b7'>"
+excerpt: "This algorithm helps in allocating people to experimental groups if balanced attributes between groups are required <br/><img src='https://github.com/m-guseva/personal/assets/63409978/1d1dc856-34d9-4e4e-8fdf-5b96d2356b1e'>"
 collection: portfolio
 ---
 
+
 ## The issue:
-In my recent study I faced the challenge to allocate 90 participants into three different equal sized groups, in such a way that the sex ratio and average age remained the same across all groups (like in the figure below). 
+In my recent study I faced the challenge of allocating 90 participants into three different equal sized groups, in such a way that the sex ratio and average age remained the same across all groups (like in the figure below). 
 
 This trivial if one already knows all the individuals who will participate in the experiment in advance. Unfortunately, this is usually not the case and presented a challenge in my study. So I wrote a script that solves this problem. By inputting the properties of a new participant, the algorithm efficiently assigns them to the appropriate group, maintaining the desired balance across all three groups. 
 
-It worked like a charm during the data collection phase earlier this year. The allocations in the diagram are actually the real allocations that resulted during my fMRI study (which is currently in preparation for submission).
-Of course I didn't leave it to chance whether the algorithm works or not, so I wrote simulation script (which is also contained in the repository as `simulation.py`). It provides a way to simulate an experiment based on different population parameters (e.g. an experiment with more female than male participants or more older females than males) and check the resulting group assignment.
-
-
-
-
 ![groupAllocation](https://github.com/m-guseva/personal/assets/63409978/380d2cc3-089c-4c6b-b6c6-b57cdeb0f6e8)
 
-
+It worked like a charm during the data collection phase earlier this year. The allocations in the diagram below are actually the real allocations that resulted during my fMRI study (which is currently in preparation for submission to a journal).
+Of course I didn't want to leave it to chance whether the algorithm will work during the study or not, so I wrote simulation script (which is also contained in the repository as `simulation.py`). It provides a handy way to simulate an experiment based on different population parameters (e.g. an experiment with more female than male participants or more older females than males) and check the resulting group assignment.
 
 
 ## The procedure in short:
