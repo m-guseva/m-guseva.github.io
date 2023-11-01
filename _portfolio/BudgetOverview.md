@@ -5,22 +5,20 @@ neat overview over average expenses per category. "
 collection: portfolio
 ---
 
-I needed a way to track my income and expenses because I was not happy with my banks' (practically non-existent) out-of-the-box tools. Since it's super easy to download the CSV files with all my expenses from the online banking website, I 
+I needed a way to track my income and expenses because I was not happy with my bank's (practically non-existent) out-of-the-box tools. Since it's super easy to download the csv files with all my expenses from the online banking website, I 
 decided to apply some Python pandas magic to create an overview over my expenses. I'm using this script since about 2 years and it works like a charm 💪🏻. 
 
 At the end of each month, I download the month's csv file from each of my banks, run the python code and end up with a neat excel file where the first sheet shows me the average expenses per category for each month as well as a neat dataframe for each month in the other sheets. This helps me compare each month's expenses and identify any spending issues, such as overspending in certain categories or unexpected cost increases like rent.
 
 
-
-## What the script does step-by-step:
+# The script
 
 The following is a step-by-step description for my specific my specific use case (some changes were made for privacy reasons 😎). I use two different banks so it needs a bit of combining. The script is made up of separate functions that do one job and then called with `main()`.
 
-### Main
-This is the main() section of the script.
-The script calls `importData()` to import the csv files from both of my banks and stores it in two dataframes. Then, `cleanData()` cleans the dataframes by removing unnecessary columns, standardizing column names, accounting for decimal conventions and finally concatenates them to a big dataframe `finanzen`. 
+## Main
+This is the `main()` section of the script. It calls `importData()` to import the csv files from both of my banks and store it in two dataframes. Then, `cleanData()` cleans the dataframes by removing unnecessary columns, standardizing column names, accounting for decimal conventions and finally concatenates them to a big dataframe `finanzen`. 
 
-```
+```python
 def main():
     #Import data files:
     print("Input current month (e.g. August -> 08)")
@@ -43,9 +41,10 @@ def main():
     
     return finanzen, ausgaben
 ```
-### Import data
-The first part is to import the csv files. The terminal prompts the user to type the relevant month and selects the corresponding csv sheet(s). This is the importData function:
-```
+## Import data
+To import the csv files, the user is prompted to type the relevant month in the terminal. The corresponding csv sheets are then selected and imported as pandas dataframes. Since I'm using two banks, I need to import two separate csv files `fileING` and `fileSP`.
+
+```python
 def importData(month, year):
     worksheetName = f"{year}_{month}"
     os.chdir(transactionFilesFolder+"/"+year+"_"+ month)
@@ -53,11 +52,12 @@ def importData(month, year):
     fileSP = pd.read_csv(year+"_"+month+"_SP.csv",delimiter=";", encoding = "ISO-8859-1")
     return fileING, fileSP, worksheetName, month
 ```
-Since I'm using two banks, I have two separate csv files which are imported using Panda's read_csv function.
 
-### Clean data
-This function first removes unnecessary columns in both dataframes. Since both banks have slightly different column names denoting the same thing, I equalize them. Next, both dataframes are concatenated to the dataframe "finanzen" and sorted by day. The "Betrag" column causes some issues because a) it's a string and b) German decimal system is different, so I use a little helper function make_float() to deal with that.
-```
+
+## Clean data
+This function removes unnecessary columns in both dataframes. Since both banks have slightly different column names denoting the same thing, I equalize them. Next, both dataframes are concatenated to the dataframe `finanzen`` and sorted by day. The "Betrag" column causes some issues because a) it's a string and b) German decimal separator system is different, so I use a little helper function make_float() to deal with that.
+
+```python
 def cleanData(fileING, fileSP):
     # Keep only relevant columns:
     fileING = fileING[['Buchung', 'Auftraggeber/Empfänger', 'Buchungstext', 'Verwendungszweck', 'Betrag']]
@@ -83,7 +83,7 @@ def cleanData(fileING, fileSP):
     finanzen=finanzen.reset_index(drop=True)
     return finanzen
 ```
-```
+```python
 def make_float(num):
     if len(num) >= 8:
         num = num.replace('.','')
@@ -94,14 +94,14 @@ def make_float(num):
     ```
 ```
 
-### Expense categorization by rule
+## Expense categorization by rule
 The next part turned out more difficult than I thought: **How can I automatize the assignment of categories to the entries?** 🤔
 
 I found recurring patterns in the expense information column, like the word "geba" in supermarket expenses and decided hard-code them as they are unlikely to change. So I created a new variable `category` and checked elementwise whether the "Auftraggeber" column in the `finanzen` dataframe contained the keyword. If yes, then it was saved in the category column. In the end the categorization column was added to the `finanzen` dataframe.
 
-ToDo: Describe the special caes with "Buchungstext"
+ToDo: Describe the special case with "Buchungstext"
 
-```
+```python
 def categoryParse(finanzen):
     #Initialize empty catAssign array where we will insert categories
     catAssign =pd.DataFrame([0] * len(finanzen))
@@ -128,12 +128,12 @@ def categoryParse(finanzen):
 ```
 
 
-### Categorization of the rest in terminal 
+## Categorization of the rest in terminal 
 Some cases couldn't be categorized based on rules alone, like one-time purchases in foreign shops.
 
 This is what the `manualAssignment()` function is for: It outputs those remaining expenses to the terminal window and goes through each entry prompoting the user to type the relevant category. The string is then assigned to the category column in the `finanzen` dataframe. In this way we end up with a complete categorization of each item.
 
-```
+```python
 def manualAssignment(finanzen):
     idx  = finanzen[(finanzen.loc[:,"category"] == 0)].index
     undefinedCat = finanzen[(finanzen.loc[:,"category"] == 0)]
@@ -149,10 +149,10 @@ def manualAssignment(finanzen):
 I'm also considering using machine learning to automate the categorization of these tricky expenses in the future. However, since there aren't many cases needing manual categorization, the current solution works well.
 
 
-### Create overview for each expense category
+## Create overview for each expense category
 I created another dataframe "ausgaben" (=Expenses) where I use the category column, create top-level categories and sum up the expenses. For example, I tend to end up with different variations for my supermarket expenses "geba" and "Edeka", so I combine them all into one category "supermarket". 
 
-```
+```python
 def createAusgaben(finanzen, month):
     #Preparatory stuff to create ausgaben dictionary:
 
@@ -165,11 +165,11 @@ def createAusgaben(finanzen, month):
     return ausgaben
 ```
 
-### Save overview to excel sheet
+## Save overview to excel sheet
 
 I have an excel sheet where I save this information. The first sheet contains the sums for all expense categories for each month and the remaining sheets are just the raw `finanzen` dataframe for easy access and reference. I had to be careful to append the row of sums to the correct month,so the `writeAusgaben_to_ExcelOverview()` function does exactly that.
 
-```
+```python
 def append_rawData_to_excelSheet(fpath, df, sheet_name):
     with pd.ExcelWriter(fpath, mode="a") as f:
         df.to_excel(f, sheet_name=sheet_name,index=False)
@@ -182,10 +182,10 @@ def writeAusgaben_to_ExcelOverview(ausgaben, month):
     return
 ```
 
-### Run main
+## Run main
 Of course in the end I specify my folder structure and run `main()` 
 
-```
+```python
 rootFolder = ".../PersonalFinance"
 transactionFilesFolder = rootFolder + "/MonthlyTransactions" 
 
