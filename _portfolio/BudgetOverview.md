@@ -4,6 +4,9 @@ excerpt: "This is how I track my personal finances using Python's pandas library
 neat overview over average expenses per category. "
 collection: portfolio
 ---
+ToDo: Describe the special case with "Buchungstext"
+ToDo: Change German names to English
+ToDo: Create image of excel file
 
 I needed a way to track my income and expenses because I was not happy with my bank's (practically non-existent) out-of-the-box tools. Since it's super easy to download the csv files with all my expenses from the online banking website, I 
 decided to apply some Python pandas magic to create an overview over my expenses. I'm using this script since about 2 years and it works like a charm 💪🏻. 
@@ -16,7 +19,7 @@ At the end of each month, I download the month's csv file from each of my banks,
 The following is a step-by-step description for my specific my specific use case (some changes were made for privacy reasons 😎). I use two different banks so it needs a bit of combining. The script is made up of separate functions that do one job and then called with `main()`.
 
 ## Main
-This is the `main()` section of the script. It calls `importData()` to import the csv files from both of my banks and store it in two dataframes. Then, `cleanData()` cleans the dataframes by removing unnecessary columns, standardizing column names, accounting for decimal conventions and finally concatenates them to a big dataframe `finanzen`. 
+This is the `main()` section of the script. It calls `importData()` which handles the import of csv files from both of my banks and stores it in two dataframes. Then, `cleanData()` cleans the dataframes by removing unnecessary columns, standardizing column names, accounting for decimal separation conventions and before concatenating them into a single dataframe `finanzen`. 
 
 ```python
 def main():
@@ -97,9 +100,9 @@ def make_float(num):
 ## Expense categorization by rule
 The next part turned out more difficult than I thought: **How can I automatize the assignment of categories to the entries?** 🤔
 
-I found recurring patterns in the expense information column, like the word "geba" in supermarket expenses and decided hard-code them as they are unlikely to change. So I created a new variable `category` and checked elementwise whether the "Auftraggeber" column in the `finanzen` dataframe contained the keyword. If yes, then it was saved in the category column. In the end the categorization column was added to the `finanzen` dataframe.
+I found recurring patterns in the expense information column, like the word "geba" in supermarket expenses and decided to hard-code them as they are unlikely to change. So I created a new variable `category` and checked elementwise whether the "Auftraggeber" column in the `finanzen` dataframe contained the keyword. If yes, then it was saved in the category column. In the end the categorization column was added to the `finanzen` dataframe.
 
-ToDo: Describe the special case with "Buchungstext"
+
 
 ```python
 def categoryParse(finanzen):
@@ -128,10 +131,8 @@ def categoryParse(finanzen):
 ```
 
 
-## Categorization of the rest in terminal 
-Some cases couldn't be categorized based on rules alone, like one-time purchases in foreign shops.
-
-This is what the `manualAssignment()` function is for: It outputs those remaining expenses to the terminal window and goes through each entry prompoting the user to type the relevant category. The string is then assigned to the category column in the `finanzen` dataframe. In this way we end up with a complete categorization of each item.
+## Manual categorization of remaining entries in terminal 
+Some cases couldn't be categorized based on rules alone, like one-time purchases in foreign shops. This is what the `manualAssignment()` function is for: It outputs those remaining expenses to the terminal window and goes through each entry prompoting the user to type the relevant category. The string is then assigned to the category column in the `finanzen` dataframe. In this way we end up with a complete categorization of each item.
 
 ```python
 def manualAssignment(finanzen):
@@ -146,7 +147,7 @@ def manualAssignment(finanzen):
     return finanzen
 ```
 
-I'm also considering using machine learning to automate the categorization of these tricky expenses in the future. However, since there aren't many cases needing manual categorization, the current solution works well.
+I'm also considering using machine learning to automate the categorization of these tricky expenses in the future. However, since there aren't many cases needing manual categorization, the current solution works well enough.
 
 
 ## Create overview for each expense category
@@ -167,7 +168,7 @@ def createAusgaben(finanzen, month):
 
 ## Save overview to excel sheet
 
-I have an excel sheet where I save this information. The first sheet contains the sums for all expense categories for each month and the remaining sheets are just the raw `finanzen` dataframe for easy access and reference. I had to be careful to append the row of sums to the correct month,so the `writeAusgaben_to_ExcelOverview()` function does exactly that.
+I keep an excel sheet where I track all this expense information. The first sheet contains the sums for all expense categories for each month and the remaining sheets store the raw `finanzen` dataframes for every month so that I can access and reference them easily. I had to be careful to append the row of sums to the correct row in the Excel sheet, so the `writeAusgaben_to_ExcelOverview()` function does exactly that.
 
 ```python
 def append_rawData_to_excelSheet(fpath, df, sheet_name):
