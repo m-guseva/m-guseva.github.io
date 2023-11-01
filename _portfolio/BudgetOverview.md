@@ -18,10 +18,15 @@ At the end of each month, I download the month's csv file from each of my banks,
 
 The following is a step-by-step description for my specific my specific use case (some changes were made for privacy reasons 😎). I use two different banks so it needs a bit of combining. The script is made up of separate functions that do one job and then called with `main()`.
 
-## Main
+## Blabla
+## Test Main
 This is the `main()` section of the script. It calls `importData()` which handles the import of csv files from both of my banks and stores it in two dataframes. Then, `cleanData()` cleans the dataframes by removing unnecessary columns, standardizing column names, accounting for decimal separation conventions and before concatenating them into a single dataframe `finanzen`. 
 
 ```python
+import os
+import pandas as pd
+
+
 def main():
     #Import data files:
     print("Input current month (e.g. August -> 08)")
