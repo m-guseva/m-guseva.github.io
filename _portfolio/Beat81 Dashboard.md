@@ -1,5 +1,5 @@
 ---
-title: "Beat81 Workout Dashboard"
+title: "🏋🏻 Tracking my Beat81 workout results in a streamlit dashboard"
 excerpt: "Using Python's streamlit library to visualize workout results <br/><img src='https://github.com/m-guseva/personal/assets/63409978/e75597a9-abbc-4de6-9ce9-c7a16a7e942c'>"
 collection: portfolio
 ---
