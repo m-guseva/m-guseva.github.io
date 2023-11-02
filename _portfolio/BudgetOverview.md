@@ -1,9 +1,10 @@
 ---
 title: "💰 How I manage my finances with Python's pandas"
 excerpt: "This is how I track my personal finances using Python's pandas library and Excel. My script cleans and categorizes bank statement csvs to create a neat
-neat overview over average expenses per category. <br/><img src='https://github.com/m-guseva/personal/assets/63409978/4bb115f5-0e3e-43df-967d-2bfae21df559'>"
+neat overview over average expenses per category. <br/><img src='https://github.com/m-guseva/personal/assets/63409978/a6020fc9-233d-4d53-9a32-671cf5942872'>"
 collection: portfolio
 ---
+
 
 
 
@@ -12,7 +13,7 @@ I needed a way to track my income and expenses because I was not happy with my b
 decided to apply some Python pandas magic to create an overview over my expenses (see example overview below). I'm using this script since about 2 years and it works like a charm 💪🏻. 
 
 
-<img src="https://github.com/m-guseva/personal/assets/63409978/9cfb6290-dde0-4803-9efa-1582d5099c05" alt="Overview" height="300">
+<img src="https://github.com/m-guseva/personal/assets/63409978/9cfb6290-dde0-4803-9efa-1582d5099c05" alt="Overview" height="200">
 
 
 *This is an example expense overview sheet (not my own)*
@@ -21,7 +22,7 @@ decided to apply some Python pandas magic to create an overview over my expenses
 
 At the end of each month, I download the month's csv file from each of my banks (see image below), run the python code and end up with a neat excel file where the first sheet shows me the average expenses per category for each month as well as a neat dataframe for each month in the other sheets. This helps me compare each month's expenses and identify any spending issues, such as overspending in certain categories or unexpected cost increases like rent.
 
-<img src="https://github.com/m-guseva/personal/assets/63409978/f326d8db-7681-4668-84f4-123191ad0663" alt="Example csv file" height="300">
+<img src="https://github.com/m-guseva/personal/assets/63409978/f326d8db-7681-4668-84f4-123191ad0663" alt="Example csv file" height="200">
 
 *Example csv file (Btw. I generated this table was generate with ChatGPT, very handy!)*
 
