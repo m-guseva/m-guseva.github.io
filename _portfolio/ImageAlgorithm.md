@@ -6,12 +6,14 @@ collection: portfolio
 ## The issue
 For my "value vision training" project (more on that here) I faced a challenge: I needed a way to select those areas in an image  where the surrounding portions of the image were homogenous in terms of tonal value. See example below:
 
-[Insert image 1]
+![ImageAlgorithm_1](https://github.com/m-guseva/personal/assets/63409978/1f5cb2ae-bf40-47f1-997f-62791853ef7a)
+<img src="https://github.com/m-guseva/personal/assets/63409978/1f5cb2ae-bf40-47f1-997f-62791853ef7a" alt="Overview" height="200">
 
 I had a lot of fun developing the algorithm, taking it from idea to actually working like it I envisioned it 😎.
 
 ## Step-by-step
-[Insert image 1]
+![ImageAlgorithm_2](https://github.com/m-guseva/personal/assets/63409978/c561aaeb-7b25-4c79-906b-1bc2cc41e283)
+
 
 (1) Randomly select a pixel in the image (let's call it targetPixel, yellow in the image). This pixel cannot be close to the borders of the image, otherwise we cannot construct a square around it, so a permissible zone by "padding" the image based on radius $r$ is created.
 
