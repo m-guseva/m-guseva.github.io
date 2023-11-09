@@ -3,16 +3,14 @@ title: "🧠 Preprocessing of fMRI data with MATLAB"
 excerpt: "How I use MATLAB's SPM toolbox to preprocess neuroimaging data"
 collection: portfolio
 ---
-# Preprocessing pipeline fMRI data in SPM
-
 Right out of the box, neuroimaging data is not ready for analysis - there are multiple steps that one needs to go through in order to use it. 
 
 The [Statistical Parametric Mapping (SPM)](https://www.fil.ion.ucl.ac.uk/spm/) toolbox is a set of MATLAB functions and is a popular way to preprocess and analyze fMRI data. As I had collected fMRI data for my study, I decided to use it and write a MATLAB pipeline (the fruits of this labour are published [here](LINK)). 
 
-Here I will show the preprocessing script. The analysis script can be found [here](LINK). Essentially it contains a set of preprocessing steps that are executed for every subject in the dataset via SPM's handy batch system. There are also other ways to accomplish this task, but to me this seemed the most straightforwad. 
+Here I  will show the preprocessing script (which can also be found [here](LINK)). Essentially it contains a set of preprocessing steps that are executed for every subject in the dataset via SPM's handy batch system. There are also other ways to accomplish this task, but to me this seemed the most straightforwad. 
 
 
-Before the loop over participants there are some variables that need to be determined:
+Before initiating the loop over participants there are some variables that need to be initialized:
 ```matlab
 project_folder    = '.../Maja'
 % Determine number of files:
@@ -30,7 +28,7 @@ for sbjct = 1:length(visibleFiles)
 ```
 
 ## Create output directory
-I begin by doing some housekeeping, i.e. creating necessary directories and selecting the files.
+I begin by creating necessary directories and selecting the files.
 
 ```matlab
 subject_number = visibleFiles(sbjct).name
@@ -175,10 +173,8 @@ for run = 1:total_run
 end
 ```
 
-## Field map correction
-Since I expected to find a lot of activation in frontal cortex, I needed to take care of spatial distortions caused by magnetic field inhomogeneities that arise due to air in cavities such as sinuses.
-
-This is where the fieldmaps come in handy. Conveniently, SPM allows me to unwarp and realign in one step.
+## Field map correction & Realignment
+Since I expected to find a lot of activation in frontal cortex, I needed to take care of spatial distortions caused by magnetic field inhomogeneities that arise due to air in cavities such as sinuses. This is where the fieldmaps come in handy. Conveniently, SPM allows me to unwarp and realign in one step.
 
 First the VDM image is created using the magnitude and phase images:
 
@@ -277,7 +273,7 @@ matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.fwhm = [7 7];
 spm_jobman('run', matlabbatch)
 ```
 ## Segmentation
-Next, the tissues were segmented with SPM's segmentation tool. To maintain a better overview over the segmentation parameters (they slightly change between the tissue probability maps), I did not put the code in a loop.
+Next, the tissues were segmented with SPM's segmentation tool. To maintain a better overview over the segmentation parameters (they slightly change between the tissue probability maps), I didn't put the code in a loop.
 ```matlab
 matlabbatch = [];
 matlabbatch{1}.spm.spatial.preproc.channel.vols = {convertStringsToChars(niftiFolder+"/anat/anat.nii")};
@@ -322,7 +318,7 @@ matlabbatch{1}.spm.spatial.preproc.warp.bb = [NaN NaN NaN
 spm_jobman('run', matlabbatch)
 ```
 ## Smoothing
-Next, images were smoothed (i.e. averaged across neighboring voxels) to reduce the noise and enhance the signal. And finally, the loop needs to be closed with an end statement.
+Next, images were smoothed (i.e. averaged across neighboring voxels) to reduce the noise and enhance the signal. And finally, the loop was to be closed with an end statement.
 
 ```matlab
 files = spm_select('FPList', funcFolder, '^u_run*')
