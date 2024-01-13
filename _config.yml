@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Maja Guseva"
   avatar           : "Profile.jpg"
-  bio              : "Doctoral student at Charité Universitätsmedizin"
+  bio              : "Doctoral researcher at Charité Universitätsmedizin"
   location         : "📍Berlin"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=maja+guseva"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "maja-guseva"
-  orcid            : "0000-0003-4379-1466"
+  orcid            : "https://orcid.org/0000-0003-4379-1466"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
