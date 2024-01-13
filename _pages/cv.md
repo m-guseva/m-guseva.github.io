@@ -89,3 +89,4 @@ Hobbies
 
 
 You can download a PDF copy of my CV [here](https://github.com/m-guseva/personal/tree/master/_pages/CV_Guseva.pdf).
+You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
