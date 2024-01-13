@@ -36,7 +36,7 @@ Work experience
 Skills
 ======
 
-### Programming
+### Technical skills
 * Python
   * Packages I work with include: Pandas, NumPy, matplotlib, scikitlearn, tensorflow, streamlit, networkX
 * MATLAB
@@ -46,6 +46,8 @@ Skills
 * JavaScript, HTML, CSS
 * Basic knowledge in R
 * Basic knowledge in SQL
+* github version control
+
 
 ### Languages
 * German (native)
@@ -80,8 +82,9 @@ Publications
 Hobbies
 =====
 - Visual art, painting & drawing, occiasional commision work
-- personal programming projects
+- Personal programming projects (see Projects [LINK])
 - Dancing
 - Drumming
 
 
+You can download a PDF copy of my CV [here](_pages/CV_Guseva.pdf).
