@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+You can download a PDF copy of my CV [here](_pages/CV_Guseva.pdf).
+
 Education
 ======
 * Ph.D. in Charité Universitätsmedizin Berlin, 2019-now 
@@ -42,7 +44,7 @@ Skills
 * MATLAB
   * Exploratory data analysis
   * Inferential statistics
-  * Neuroimaging analysis including Statistical Parametric Toolbox (SPM) and the decoding toolbox (TDT)
+  * Neuroimaging analysis including Statistical Parametric Toolbox (SPM) and the decoding toolbox
 * JavaScript, HTML, CSS
 * Basic knowledge in R
 * Basic knowledge in SQL
@@ -82,9 +84,8 @@ Publications
 Hobbies
 =====
 - Visual art, painting & drawing, occiasional commision work
-- Personal programming projects (see Projects [LINK])
+- Personal programming projects (see [Projects](https://m-guseva.github.io/portfolio/))
 - Dancing
 - Drumming
 
 
-You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
