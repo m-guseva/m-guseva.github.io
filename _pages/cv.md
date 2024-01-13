@@ -42,7 +42,7 @@ Skills
 * MATLAB
   * Exploratory data analysis
   * Inferential statistics
-  * Neuroimaging analysis including Statistical Parametric Toolbox (SPM)
+  * Neuroimaging analysis including Statistical Parametric Toolbox (SPM) and the decoding toolbox (TDT)
 * JavaScript, HTML, CSS
 * Basic knowledge in R
 * Basic knowledge in SQL
@@ -87,6 +87,4 @@ Hobbies
 - Drumming
 
 
-
-You can download a PDF copy of my CV [here](https://github.com/m-guseva/personal/tree/master/_pages/CV_Guseva.pdf).
 You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
