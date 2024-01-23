@@ -11,6 +11,9 @@ redirect_from:
 
 ### 👉🏻 You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
 
+---
+
+
 🎓 Education
 ======
 * Ph.D. in Charité Universitätsmedizin Berlin, 2019-now 
