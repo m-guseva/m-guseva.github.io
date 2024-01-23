@@ -12,8 +12,9 @@ redirect_from:
 
 ### 👉🏻 You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
 ![WlvdFHvu_200x200](https://github.com/m-guseva/m-guseva.github.io/assets/63409978/b9d2cc13-9387-4795-9ab5-efaab2845be0)
-======
 
+
+---
 
 🎓 Education
 ======
