@@ -90,7 +90,7 @@ redirect_from:
 =====
 - Visual art, painting & drawing, occiasional commision work
 - Personal programming projects (see [Projects](https://m-guseva.github.io/portfolio/))
-- Dancing
+- Dancing, physical activity
 - Drumming
 
 
