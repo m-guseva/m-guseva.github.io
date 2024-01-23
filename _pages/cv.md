@@ -11,7 +11,7 @@ redirect_from:
 
 ### 👉🏻 You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
 
----
+======
 
 
 🎓 Education
