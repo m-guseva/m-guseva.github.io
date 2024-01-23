@@ -67,12 +67,12 @@ redirect_from:
 * Italian (basic)
 
 ### Soft skills
-* autodidact, enthusiastic about learning things
-* creative problem solver
-* organized and structured working style
-* visual communication 
-* perseverance and resilience
-* detail-oriented, clean work
+* Autodidact, enthusiastic about learning things
+* Creative problem solver
+* Organized and structured working style
+* Visual communication 
+* Perseverance and resilience
+* Detail-oriented, clean work
 
 
 
