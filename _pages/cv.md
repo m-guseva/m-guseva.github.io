@@ -78,7 +78,7 @@ redirect_from:
 
 📝 Publications
 ======
-- Neuroimaging paper "“Neural correlates of behavioral randomization”, currently in submission process, expected publication 2024
+- Neuroimaging paper "Neural correlates of behavioral randomization”, currently in submission process, expected publication 2024
 - [Instruction effects on randomness in sequence generation](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full). 
 **Guseva, M.**, Bogler, C., Allefeld, C., & Haynes, J. D. (2023) in Frontiers in Psychology, 14, 1113654.
 - [Surgical face masks do not impair the decoding of facial expressions of negative affect more severely in older than in younger adults](https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-022-00403-8). Henke, L., **Guseva, M.**, Wagemans, K., Pischedda, D., Haynes, J. D., Jahn, G., & Anders, S. (2022) in Cognitive Research: Principles and Implications, 7(1), 1-15.
