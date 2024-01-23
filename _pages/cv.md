@@ -28,7 +28,7 @@ redirect_from:
   * Conducted research projects including:
     * Designed, scripted and executed a neuroimaging study (functional magnetic resonance imaging) using Python, successfully collected brain data from 90 people. Analyzed data using both classic univariate and multivariate (linear support vector machine algorithm) methods in MATLAB, manuscript in submission process
     * Executed an online psychology experiment by planning and scripting with JavaScript/HTML/CSS. Collected experimental data from 543 people and conducted detailed analysis of the behavioral data resulting in  a published [manuscript](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full).
-    * Scripted another online psychology experiment and collected data from 96 participants leading to a published [manuscript]((https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-022-00403-8)).
+    * Scripted another online psychology experiment and collected data from 96 participants leading to a published [manuscript](https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-022-00403-8).
   * Supervised two master students
 
 
