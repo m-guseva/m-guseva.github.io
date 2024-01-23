@@ -17,4 +17,4 @@ redirect_from:
 
 👩🏻‍💻 My goal is to focus my analytical skills in the field of data science. I love working with Python, SQL, Matlab - Check out my personal and doctoral programming projects [here](https://m-guseva.github.io/portfolio/).
 
-🖌 If I'm not working on some Python project, I'm spending my time creating [art](https://www.instagram.com/gajamuseva/)
+🖌 If I'm not working on some Python project, I'm spending my time creating [art](https://www.instagram.com/gajamuseva/).
