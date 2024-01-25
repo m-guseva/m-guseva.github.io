@@ -11,7 +11,7 @@ redirect_from:
 
 
 ### 👉🏻 You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
-![WlvdFHvu_200x200](https://github.com/m-guseva/m-guseva.github.io/assets/63409978/b9d2cc13-9387-4795-9ab5-efaab2845be0)
+<img src="https://github.com/m-guseva/m-guseva.github.io/assets/63409978/b9d2cc13-9387-4795-9ab5-efaab2845be0" alt="WlvdFHvu_200x200" width="200" height="200" />
 
 
 ---
@@ -90,7 +90,7 @@ redirect_from:
 
 🫀 Hobbies
 =====
-- Visual art, painting & drawing, occiasional commision work
+- Visual art, painting & drawing, occasional commision work
 - Personal programming projects (see [Projects](https://m-guseva.github.io/portfolio/))
 - Dancing, physical activity
 - Drumming
