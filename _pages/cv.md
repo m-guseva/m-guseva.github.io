@@ -11,7 +11,7 @@ redirect_from:
 
 
 ### 👉🏻 You can download a PDF copy of my CV [here](/files/CV_Guseva.pdf).
-<img src="https://github.com/m-guseva/m-guseva.github.io/assets/63409978/b9d2cc13-9387-4795-9ab5-efaab2845be0" alt="WlvdFHvu_200x200" width="200" height="200" />
+<img src="https://github.com/m-guseva/m-guseva.github.io/assets/63409978/b9d2cc13-9387-4795-9ab5-efaab2845be0" alt="WlvdFHvu_200x200" width="300" height="300" />
 
 
 ---
