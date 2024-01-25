@@ -1,6 +1,6 @@
 ---
 title: "👀 Algorithm that determines homogeneous areas in images (Python)"
-excerpt: "This algorithm finds those areas in an image that are similar in value. <br/><img src='https://github.com/m-guseva/m-guseva.github.io/blob/master/images/thumb_imageAlgorithm.jpg?raw=true' width='900'>"
+excerpt: "This algorithm finds those areas in an image that are similar in value. <br/><img src='https://github.com/m-guseva/m-guseva.github.io/blob/master/images/thumb_imageAlgorithm.jpg?raw=true'>"
 collection: portfolio
 ---
 ## The issue
