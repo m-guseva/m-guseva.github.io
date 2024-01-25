@@ -1,7 +1,7 @@
 ---
 title: "🏋🏻 Building a Choice Predictor with Streamlit and XGBoost)"
 excerpt: "Building an interactive web application where a user makes binary choices and an ML algorithm learns from these decisions to predict the user's next selection with real-time feedback on the algorithm's prediction accuracy.
-<br/><img src='https://github.com/m-guseva/choice-predictor/blob/main/Layout.jpg?raw=true' width='900'>
+<br/><img src='https://github.com/m-guseva/choice-predictor/blob/main/Layout.jpg?raw=true' width='900'>"
 collection: portfolio
 ---
 
