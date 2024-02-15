@@ -1,6 +1,6 @@
 ---
 title: "👁 Value vision training game for artists with Python"
-excerpt: "I created a game in Python where artists can train their tonal values to improve their realistic drawing and painting skills "
+excerpt: "I created a game in Python where artists can train their tonal values to improve their realistic drawing and painting skills <br/><img src='https://github.com/m-guseva/m-guseva.github.io/blob/master/images/thumb_valuevision.png?raw=true'>"
 collection: portfolio
 ---
 
