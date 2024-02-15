@@ -4,7 +4,7 @@ excerpt: "This algorithm finds those areas in an image that are similar in value
 collection: portfolio
 ---
 ## The issue
-For my "value vision training" project (more on that coming soon!) I faced a challenge: I needed a way to select those areas in an image  where the surrounding portions of the image were homogenous in terms of tonal value. See example below:
+For my "value vision training" project (more on that [here](https://m-guseva.github.io/portfolio/2_ValueVision/)) I faced a challenge: I needed a way to select those areas in an image  where the surrounding portions of the image were homogenous in terms of tonal value. See example below:
 
 ![ImageAlgorithm_1](https://github.com/m-guseva/personal/assets/63409978/1f5cb2ae-bf40-47f1-997f-62791853ef7a)
 
