@@ -9,7 +9,7 @@ collection: portfolio
 Drawing has always been my passion since I was a little girl. On my art journey I learned that to get good at drawing one has to get good at a set of fundamental skills. Arguably the most important one of all is getting the **tonal value** of an object right. Why? The tonal values communicate where the light hits a surface. Simply speaking, the lighter the surface, the closer it is to the light source, the darker the surface, the farther it is from the light. This essentially determines the whole shape and nature of an object. If this is wrong, no amount of color can fix that. So, as an artist you have to be on point with the values (if your goal is to draw realistically of course 😄).
 
 
-[<img src="https://github.com/m-guseva/choice-predictor/blob/main/Layout.jpg?raw=true" width="300"/>](drawing.jpg)
+[<img src="https://github.com/m-guseva/m-guseva.github.io/blob/master/_portfolio/Drawing.jpg?raw=true" width="300"/>](drawing.jpg)
 
 
 ## The problem:
