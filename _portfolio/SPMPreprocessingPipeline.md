@@ -1,8 +1,9 @@
 ---
 title: "🧠 Preprocessing of fMRI data with MATLAB"
-excerpt: "How I use MATLAB's SPM toolbox to preprocess neuroimaging data"
+excerpt: "How I use MATLAB's SPM toolbox to preprocess neuroimaging data <br/><img src='https://github.com/m-guseva/m-guseva.github.io/blob/master/images/thumb_SPMPreprocessing.png?raw=true'>"
 collection: portfolio
 ---
+
 Right out of the box, neuroimaging data is not ready for analysis - there are multiple steps that one needs to go through in order to use it. 
 
 The [Statistical Parametric Mapping (SPM)](https://www.fil.ion.ucl.ac.uk/spm/) toolbox is a set of MATLAB functions and is a popular way to preprocess and analyze fMRI data. As I had collected fMRI data for my study, I decided to use it and write a MATLAB pipeline (the fruits of this labour are published [here](LINK)). 
