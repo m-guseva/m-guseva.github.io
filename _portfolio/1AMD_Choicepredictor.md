@@ -201,7 +201,7 @@ def split_sequence_to_df(sequence, n_steps):
 Next the our variable supervised_sequence which contains the lagged arrays is split into predictors X_train and target y_train.
 
 ### 3. Fit model to X_train and y_train and create prediction
-Then an XGBRegressor model is fit to predictors and target. Then we take the last choices in our sequence (as determined by number of lagged features) to base our predictions on. We create the prediction and transform it. This step is necessary because the predictions don't come in a binary format, so if the number is <0.5 it becomes 0, else 1.
+Then the chosen prediction model, e.g. the XGBRegressor model, is fit to predictors and target. Then we take the last choices in our sequence (as determined by number of lagged features) to base our predictions on. We create the prediction and transform it. This step is necessary because the predictions don't come in a binary format, so if the number is <0.5 it becomes 0, else 1.
 
 ```python
 def transform_predictions(predictions):
