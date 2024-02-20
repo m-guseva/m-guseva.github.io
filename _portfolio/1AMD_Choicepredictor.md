@@ -179,7 +179,7 @@ def predictNextChoice(sequence, features):
 Let's look at this function step by step:
 ### 1. Create supervised sequence
 First we create a supervised sequence. Given that a choice sequence is essentially a time series, we can use lagged versions of the sequence as our features. This is done with `split_sequence_to_df()` 
-[INSERT img of split sequence df]. 
+
 
 ```python
 def split_sequence_to_df(sequence, n_steps):
