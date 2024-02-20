@@ -21,9 +21,12 @@ The way that each area is selected is based on an algorithm that I've created th
 
 The value vision trainer was created in Python using streamlit for the interface. 
 
+[<img src="https://github.com/m-guseva/value_vision_trainer/blob/main/interface.png?raw=true" width="800"/>](interface.jpg)
+
+
 👉🏻 You can try the game here: [https://value-vision-trainer.streamlit.app/](https://value-vision-trainer.streamlit.app/)
 
-👉🏻 The code is also uploaded on github [here](ttps://github.com/m-guseva/value_vision_trainer).
+👉🏻 The code is also uploaded on github [here](https://github.com/m-guseva/value_vision_trainer).
 
 ## Future plans
 I am planning to implement a similar training for other building blocks of art making, e.g. hue matching, proportion training, perspective training, edges (smooth/hard) in the future, this serves as a starting point.
