@@ -15,7 +15,7 @@ In my research experiments I asked people to make many binary choices between "h
 As a side hobby project I decided to build a similar experiment in a web application using streamlit, which is handy a Python library that turns data scripts into shareable web apps. The program (I call it the ✨choice predictor✨) asks users to make multiple binary choices (between 1 or 0), and the algorithm learns from these choices to predict the next one.
 The full code can be found in [this github repo](https://github.com/m-guseva/choice-predictor). Here I explain step by step how I designed this application.
 
-The programm is deployed and can be accessed here: **[choicepredictor.streamlit.app/](choicepredictor.streamlit.app/)**
+The programm is deployed and can be accessed here: [https://choicepredictor.streamlit.app/](https://choicepredictor.streamlit.app/)
 
 [<img src="https://github.com/m-guseva/choice-predictor/blob/main/Layout.jpg?raw=true" width="900"/>](image.png)
 
@@ -309,7 +309,7 @@ def TrainModel(supervised_values, which_model):
     return model,validation_accuracy
 ```
 
-The training is executed with the function `TrainModel()` #TODO maybe rename as WalkForwardValidation
+The training is executed with the function `TrainModel()` 
 This function takes the supervised_values and an argument `which_model` which specifies the type of model to use (logreg, xgboost and randomForest are possible). Then it splits the supervised_values into train and validate for use in the walkforward validation procedure.
 #### What is Walk forward validation?
 Walk-forward validation is a good choice for time series data. The process involves training a model on a subset of the data (from time point t0 to tn) and making predictions for the next time point, tn+1. Following this, the predicted value for tn+1 is compared to the actual observed value. The data point for tn+1 is then incorporated into the training set, and the model is re-fitted, now incorporating this additional data point.
