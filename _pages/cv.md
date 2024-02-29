@@ -90,7 +90,7 @@ redirect_from:
 
 🫀 Hobbies
 =====
-- Visual art, painting & drawing, occasional commision work
+- [Visual art](https://www.instagram.com/gajamuseva/), painting & drawing, occasional commision work
 - Personal programming projects (see [Projects](https://m-guseva.github.io/portfolio/))
 - Dancing, physical activity
 - Drumming
