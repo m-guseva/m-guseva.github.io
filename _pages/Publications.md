@@ -9,6 +9,7 @@ author_profile: true
 Manuscript currently in submission: "Neural correlates of behavioral randomization", a functional magnetic resonance imaging study exploring the neural basis of human randomization behavior.
 
 Preprint available here: [https://www.biorxiv.org/content/10.1101/2024.03.27.586961v1.full](https://www.biorxiv.org/content/10.1101/2024.03.27.586961v1.full)
+
 ---
 
 ### [Instruction effects on randomness in sequence generation](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full)
