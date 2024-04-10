@@ -5,14 +5,20 @@ permalink: "/pubs/"
 author_profile: true
 ---
 
+## [Neural correlates of behavioral randomization](https://www.biorxiv.org/content/10.1101/2024.03.27.586961v1.full)
+Guseva, M., Bogler, C., Allefeld, C., Ziya, E.B., & Haynes, J. D.; Manuscript currently in submission, Preprint available on [bioRxiv](https://www.biorxiv.org/content/10.1101/2024.03.27.586961v1.full)
 
-Manuscript currently in submission: "Neural correlates of behavioral randomization", a functional magnetic resonance imaging study exploring the neural basis of human randomization behavior.
+In some cases, when we are making decisions, the available choices can appear to be equivalent. When this happens, our choices appear not to be constrained by external factors and instead we can believe to be selecting “randomly”. Furthermore, randomness is sometimes even explicitly required by task conditions such as in random sequence generation (RSG) tasks. This is a challenging task that involves the coordination of multiple cognitive processes, which can include the inhibition of habitual choice patterns and monitoring of the running choice sequence.
 
-Preprint available here: [https://www.biorxiv.org/content/10.1101/2024.03.27.586961v1.full](https://www.biorxiv.org/content/10.1101/2024.03.27.586961v1.full)
+It has been shown that random choices are strongly influenced by the way they are instructed. This raises the question whether the brain mechanisms underlying random selection also differ between different task instructions. To assess this, we measured brain activity while participants were engaging in three different variations of a sequence generation task: Based on previous work, participants were instructed to either (1) “generate a random sequence of choices”, (2) “simulate a fair coin toss”, or (3) “choose freely”.
+
+Our results reveal a consistent frontoparietal activation pattern that is shared across all tasks. Specifically, increased activity was observed in bilateral inferior and right middle frontal gyrus, left pre-supplementary motor area, bilateral inferior parietal lobules and portions of anterior insular cortex in both hemispheres. Activity in the mental coin toss condition was higher in right dorsolateral prefrontal cortex, left (pre-) supplementary motor area, a portion of right inferior frontal gyrus, bilateral superior parietal lobules and bilateral anterior insula. Additionally, our multivariate analysis revealed a distinct region in the right frontal pole to be predictive of the outcome of choices, but only when randomness was explicitly instructed.
+
+These results emphasize that different randomization tasks involve both shared and unique neural mechanisms. Thus, even seemingly similar randomization behavior can be produced by different neural pathways.
 
 ---
 
-### [Instruction effects on randomness in sequence generation](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full)
+## [Instruction effects on randomness in sequence generation](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1113654/full)
 Guseva, M., Bogler, C., Allefeld, C., & Haynes, J. D. (2023) in Frontiers in Psychology, 14, 1113654.
 
 Randomness is a fundamental property of human behavior. It occurs both in the form of intrinsic random variability, 
