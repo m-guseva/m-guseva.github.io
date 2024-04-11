@@ -1,6 +1,6 @@
 ---
 title: "Uncovering Russian Disinformation: Analyzing Telegram Chats with Python's NetworkX"
-excerpt: "A network of telegram chats and messages was analyed<br/><img src='https://github.com/m-guseva/m-guseva.github.io/blob/master/images/Graph.png?raw=true'>"
+excerpt: "A network of telegram chats and messages was analyed<br/><img src='https://github.com/m-guseva/m-guseva.github.io/blob/master/images/thumb_correlaid.png?raw=true'>"
 collection: portfolio
 ---
 
